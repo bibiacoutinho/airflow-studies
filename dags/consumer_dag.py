@@ -16,7 +16,7 @@ def update_file():
 
 with DAG('consumer_dag', start_date=datetime(2023, 1, 1),
          # schedule to [target_file] means that this DAG will execute when the file is updated by update_file_dag
-         schedule=[target_file], catchup=False, default_args=default_args, description='DAG triggers by updating a file (aka dataset).') as dag:
+         schedule=[target_file], catchup=False, default_args=default_args, description='DAG is triggered when some_file.txt is updated (aka dataset).') as dag:
 
     update_file = PythonOperator(
         task_id='update_file',
