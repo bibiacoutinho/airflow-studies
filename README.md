@@ -11,4 +11,13 @@ When trigger_dag is executed and finished with success, target_dag starts. Files
 update_file_dag updates a file (some_file.txt), when this file is updated, this triggers consumer_dag. Files:
 - update_file_dag
 - consumer_dag
+
 obs: Demo 1 creates directory and file that it's needed to Demo 2 to work.
+
+## Demo 3:
+Example: trigger manually update_file_dag to update some_file.txt, consumer2_dag will waits until update_file2_dag updates another_file.txt to be executed. consumer2_dag will only be triggered when both files gets updated. Files:
+- update_file_dag
+- update_file2_dag
+- consumer2_dag
+
+obs: Demo 1 creates directory and file that it's needed to Demo 3 to work.
