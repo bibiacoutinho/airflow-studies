@@ -27,4 +27,7 @@ TaskGroup structure. Files:
 - group_dag.py
 - groups/group_downloads.py
 - groups/group_transforms.py
-![TaskGroup Structure: "transforms" task is open to show subtasks](/imgs/taskgroup.png)
+
+TaskGroup Structure: "transforms" task is open to show subtasks:
+
+![](/imgs/taskgroup.png)
