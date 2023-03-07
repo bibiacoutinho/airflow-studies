@@ -21,3 +21,10 @@ Example: trigger manually update_file_dag to update some_file.txt, consumer2_dag
 - consumer2_dag
 
 obs: Demo 1 creates directory and file that it's needed to Demo 3 to work.
+
+## Demo 4:
+TaskGroup structure. Files:
+- group_dag.py
+- groups/group_downloads.py
+- groups/group_transforms.py
+![TaskGroup Structure: "transforms" task is open to show subtasks](/imgs/taskgroup.png)
