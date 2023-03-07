@@ -31,3 +31,9 @@ TaskGroup structure. Files:
 TaskGroup Structure: "transforms" task is open to show subtasks:
 
 ![](/imgs/taskgroup.png)
+
+## Demo 5:
+Branching example. Files:
+- branching_dag.py
+
+![](/imgs/branching.png)
